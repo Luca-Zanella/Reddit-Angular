@@ -1,0 +1,28 @@
+<div class="container">
+    <form class="jumbotron">
+        <h3 class="display-4">Aggiungi un link</h3>
+        <div class="form-group">
+            <!--Label per nome dell'articolo-->
+            <label for="title">Title:</label>
+            <!--Assegnare al input un id che poi verrà ripreso dentro la nostra funzione-->
+            <input name="title" #newtitle class="form-control">
+        </div>
+        <div class="form-group">
+            <!--Label per nome del link-->
+            <label for="link">Link:</label>
+            <!--Binding abbiamo legato il tag input alla variabili newlink-->
+            <input name="link" #newlink class="form-control">
+        </div>
+
+        <!--click è un metodo preimpostato di angular come jfx a seguire nome del moetodo creato da noi-->
+        <!--Inserire dentro la funzione del bottone i due id delle nostre due variabili di input-->
+        <button (click)="addArticle(newtitle,newlink)" class="btn btn-primary">
+      Sumbit Link
+    </button>
+
+    </form>
+</div>
+
+<div>
+    <app-article class="card"></app-article>
+</div>
