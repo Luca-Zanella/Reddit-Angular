@@ -1,0 +1,44 @@
+<div class="container">
+    <form class="jumbotron">
+        <h3 class="display-4">Invia una mail</h3>
+        <div class="form-group">
+            <!--Label per nome dell'articolo-->
+            <label for="destinatario">destinatario</label>
+            <!--Assegnare al input un id che poi verrà ripreso dentro la nostra funzione-->
+            <input name="destinatario" #newdestinatario class="form-control">
+        </div>
+        <div class="form-group">
+            <!--Label per nome del link-->
+            <label for="oggetto">oggetto</label>
+            <!--Binding abbiamo legato il tag input alla variabili newlink-->
+            <input name="oggetto" #newoggetto class="form-control">
+        </div>
+
+          <div class="form-group">
+            <!--Label per nome del link-->
+            <label for="testo">testo</label>
+            <!--Binding abbiamo legato il tag input alla variabili newlink-->
+            <input name="testo" #newtesto class="form-control">
+        </div>
+
+        <!--click è un metodo preimpostato di angular come jfx a seguire nome del moetodo creato da noi-->
+        <!--Inserire dentro la funzione del bottone i due id delle nostre due variabili di input-->
+        <button (click)="sendEmail(newdestinatario,newoggetto,newtesto)"  class="btn btn-primary">
+            Invia
+        </button>
+
+    </form>
+</div>
+
+<div class="container">
+
+    
+  <!-- Se il ciclo lo facciamo direttamente su sorted articles metterà in 'primo posto il post con più upvotes dinamicamente' -->
+
+  <li *ngFor='let art of emails' style="list-style:none; margin-top: 10px;">
+      <app-sent-email [email]='art' ></app-sent-email>
+      
+  </li>
+
+  <!-- end adding here -->
+</div>
