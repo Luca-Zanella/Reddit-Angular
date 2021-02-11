@@ -1,15 +1,16 @@
 <div class="card-body">
     <div>
-        <p>{{email.destinatario}}</p> <br>
-        <p>{{email.oggetto}}</p> <br>
+        <p>{{email.destinatario}} - {{email.oggetto}}</p> <br>
+
     </div>
 
     <div>
-        <button (click)="espandi()" >Espandi</button>
+        <button (click)="espandi()" class="btn btn-secondary" type='button'>Espandi/Chiudi</button>
+
         <p *ngIf="isShow" id="divshow">{{email.testo}}</p>
     </div>
 
 
-
+    <button (click)="speciale()" class="btn btn-secondary" type='button'>Speciale</button>
 
 </div>
