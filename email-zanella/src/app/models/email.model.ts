@@ -2,13 +2,24 @@ export class Email {
   destinatario: string;
   oggetto: string;
   testo: string;
-
+  agg: boolean = false;
   
+
   constructor(title: string, link: string, testo: string) {
     this.destinatario = title;
     this.oggetto = link;
     this.testo = testo;
   }
+
+  speciale(): boolean {
+    if (this.agg == false) {
+      return (this.agg = true);
+    } else {
+      return (this.agg = false);
+    }
+  }
+
+  
 
   //metodo normale che non ritorna niente essendo un void che mi aumenta i votes di uno
   /*
