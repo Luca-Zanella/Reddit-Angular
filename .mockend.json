@@ -2,9 +2,8 @@
 
 {
   "Post": {
-    "post": "string",
-    "views": "int",
-    "published": "boolean",
-    "createdAt": "date"
+    "id": 1,
+    "title": "json-server",
+    "author": "typicode"
   }
 }
