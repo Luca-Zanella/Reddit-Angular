@@ -1,11 +1,8 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+  "Post": {
+    "title": "string",
+    "views": "int",
+    "published": "boolean",
+    "createdAt": "date"
   }
 }
