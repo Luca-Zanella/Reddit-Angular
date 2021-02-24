@@ -1,8 +1,19 @@
 {
   "Post": [
-    "title": "string",
-    "views": "int",
-    "published": "boolean",
-    "createdAt": "date"
+   {
+        "id": 21,
+        "title": "xhZctrcDeP",
+        "views": 98
+      },
+      {
+        "id": 2,
+        "title": "oOoKawNYOn",
+        "views": 96
+      },
+      {
+        "id": 86,
+        "title": "YXCyIpoJdV",
+        "views": 96
+      }
   ]
 }
