@@ -1,19 +1,27 @@
 {
     "posts": [
         {
-            "title": "google",
-            "link": "www.google.com",
-            "votes": 0
+            "posts": {
+                "title": "google",
+                "link": "www.google.com",
+                "votes": 10
+            }
         },
         {
-            "title": "youtube",
-            "link": "www.youtube.com",
-            "votes": 0
+            "posts": {
+                "title": "youtube",
+                "link": "www.youtube.com",
+                "votes": 10
+                
+            }
         },
         {
-            "title": "reddit",
-            "link": "www.reddit.com",
-            "votes": 0
+            "posts": {
+                "title": "reddit",
+                "link": "www.reddit.com",
+                "votes": 10
+                
+            }
         }
     ]
 }
