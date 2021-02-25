@@ -13,14 +13,17 @@ export class AppComponent {
   //viene richiamato il costruttore associandolo alla variabile articles
   articles:Article[];
   constructor(){
+    /*
     this.articles = [
       //in questo modo andiamo a prendere il costruttore creato nell'OOP del ts 
       //e con new Article usiamo i paraemtri del costruttori che eranoo 3 e 3 vengono dati con string string e votes?
+      
       new Article('Angular 2','http://angular.io',3),
       new Article('Fullstack','http://fullstack.io',2),
       new Article('Angualr HomePage','http://angular.io',1)
       
     ]
+    */
   }
 
 

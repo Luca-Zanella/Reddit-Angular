@@ -2,17 +2,17 @@
     "posts": [
         {
             "title": "google",
-            "link": "www.google.com",
+            "link": "https://www.google.com",
             "votes": 10
         },
         {
             "title": "youtube",
-            "link": "www.youtube.com",
+            "link": "https://www.youtube.com",
             "votes": 10
         },
         {
             "title": "reddit",
-            "link": "www.reddit.com",
+            "link": "https://www.reddit.com",
             "votes": 10
         }
     ]

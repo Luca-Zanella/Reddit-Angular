@@ -1,8 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ArticleComponent } from './article/article.component';
 
 @NgModule({
@@ -11,8 +10,7 @@ import { ArticleComponent } from './article/article.component';
     ArticleComponent
   ],
   imports: [
-    BrowserModule,
-    NgbModule
+    BrowserModule,HttpClientModule //aggiungere il modulo appena importato qua dentro
   ],
   providers: [],
   bootstrap: [AppComponent]

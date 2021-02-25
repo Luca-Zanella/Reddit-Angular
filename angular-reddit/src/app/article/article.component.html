@@ -1,15 +1,22 @@
-<div class="card-header">
-    <!--Andiamo a sostituire le variabili globali del ts con le variabili del module come in OOP -->
-    <h3> {{ article.votes }} Points </h3>
-</div>
-<div class="card-body">
-    <a href="{{ article.link }}"> {{ article.title }}</a>
-    <span class="badge badge-pill badge-info">{{article.domain()}}</span>
-</div>
-<div class="card-footer">
-    <div class="btn-group">
-        <!--Andiamo a prendere il metodo per votare su o giùcha abbiamo creato nella classe OOP per poi creare un metodo da mettere nel ts di appartenenza all'html se no non è possibli utilizzarlo-->
-        <a href (click)="voteUp()" class="btn btn-secondary"> upvote </a>
-        <a href (click)="voteDown()" class="btn btn-secondary"> downvote </a>
+<button (click)="makeTypedRequest()" class="btn btn-secondary">Click</button>
+
+
+
+
+
+<div *ngFor="let art of fooData">
+    <div class='card-header'>
+        <h3>{{art.votes}} Point</h3>
     </div>
+
+    <p>{{art.title}} {{art.link}}</p>
+
+    <hr>
+
+    <div class="card-footer">
+        <div class="btn-group">
+           <a href (click)="voteUp()" class="btn btn-secondary"> upvote </a>
+           <a href (click)="voteDown()" class="btn btn-secondary"> downvote </a>
+       </div>
+     </div>
 </div>
