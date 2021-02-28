@@ -13,11 +13,11 @@ export class Article {
   }
 
   //metodo normale che non ritorna niente essendo un void che mi aumenta i votes di uno
-  voteUp(): void {
+  VoteUp(): void {
     this.votes += 1;
   }
 //metodo normale che non ritorna niente essendo un void che mi diminuisce i votes di uno
-  voteDown(): void {
+  VoteDown(): void {
     this.votes -= 1;
   }
 

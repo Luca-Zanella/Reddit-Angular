@@ -9,14 +9,17 @@
         <h3>{{art.votes}} Point</h3>
     </div>
 
-    <p>{{art.title}} {{art.link}}</p>
+    <p>{{art.title}} </p>
+    <a href="{{art.link}}" target="_blank">{{art.link}}</a>
 
     <hr>
 
     <div class="card-footer">
         <div class="btn-group">
-           <a href (click)="voteUp()" class="btn btn-secondary"> upvote </a>
-           <a href (click)="voteDown()" class="btn btn-secondary"> downvote </a>
-       </div>
-     </div>
+            <a href (click)="voteUp()" class="btn btn-secondary"> upvote </a>
+            <a href (click)="voteDown()" class="btn btn-secondary"> downvote </a>
+        </div>
+    </div>
 </div>
+
+

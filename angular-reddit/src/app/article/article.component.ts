@@ -36,6 +36,7 @@ export class ArticleComponent implements OnInit {
     this.votes = 10;
      */
     //this.article = new Article('Angular 2', 'http://angualr.io', 10);
+
   }
 
   makeTypedRequest(): void{
@@ -48,13 +49,16 @@ export class ArticleComponent implements OnInit {
 
 
   //metodo creato soltanto per riprendere quello fatto nella OOP del ts così da poterlo utilizzarel nell'html se no impossibilie
-  voteUp(): Boolean {
-    this.article.voteUp(); //acceddiamo alla proprietà votes di article
+  voteUp(): boolean {
+
+    this.fooData[0].votes += 1;
+
+    //this.article.voteUp(); //acceddiamo alla proprietà votes di article
     return false; //per far si che l'evento non venga propagato
   }
 
-  voteDown(): Boolean {
-    this.article.voteDown();
+  voteDown(): boolean {
+    this.fooData[0].VoteDown();
     return false;
   }
 
