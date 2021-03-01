@@ -20,25 +20,22 @@
             Sumbit Link
         </button>
 
+
     </form>
 </div>
 
-<app-article></app-article>
+
 
 
 <!--
-<div class="container">
-   
-    <li *ngFor='let art of sortedArticles()' style="list-style:none; margin-top: 10px;">
-        <app-article [article]='art'></app-article>
-    </li>
-
-</div>
+    
 -->
 
+<button (click)="makeTypedRequest()" class="btn btn-primary" style="margin-left: 10px;">Click</button>
 
-<!--<div class="container">
-    <app-article
-      *ngFor="let art of articles" [article]="art">
-    </app-article>
-  </div>-->
+
+<div>
+    <li *ngFor="let art of fooData" style="list-style: none;">
+        <app-article [article]="art"></app-article>
+    </li>
+</div>

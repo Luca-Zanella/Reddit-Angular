@@ -13,13 +13,7 @@ export class Article {
   }
 
   //metodo normale che non ritorna niente essendo un void che mi aumenta i votes di uno
-  VoteUp(): void {
-    this.votes += 1;
-  }
-//metodo normale che non ritorna niente essendo un void che mi diminuisce i votes di uno
-  VoteDown(): void {
-    this.votes -= 1;
-  }
+
 
   //domain estrare gli URL
   //niente di che verificare se togliendolo da problemi

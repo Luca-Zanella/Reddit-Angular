@@ -1,25 +1,15 @@
-<button (click)="makeTypedRequest()" class="btn btn-secondary">Click</button>
-
-
-
-
-
-<div *ngFor="let art of fooData">
-    <div class='card-header'>
-        <h3>{{art.votes}} Point</h3>
-    </div>
-
-    <p>{{art.title}} </p>
-    <a href="{{art.link}}" target="_blank">{{art.link}}</a>
-
-    <hr>
-
-    <div class="card-footer">
-        <div class="btn-group">
-            <a href (click)="voteUp()" class="btn btn-secondary"> upvote </a>
-            <a href (click)="voteDown()" class="btn btn-secondary"> downvote </a>
-        </div>
-    </div>
+<div class='card-header'>
+    <h3>{{article.votes}} Point</h3>
 </div>
 
+<p>{{article.title}} </p>
+<a href="{{article.link}}" target="_blank">{{article.link}}</a>
 
+<hr>
+
+<div class="card-footer">
+    <div class="btn-group">
+        <a href (click)="voteUp()" class="btn btn-secondary"> upvote </a>
+        <a href (click)="voteDown()" class="btn btn-secondary"> downvote </a>
+    </div>
+</div>
